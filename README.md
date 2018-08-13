@@ -1,5 +1,4 @@
-#DesignPattern_Behaviour
-
+# DesignPattern_Behaviour
 This is the first public release of my library that contains various structural design patterns, especially for Java.
 
 Any code must be understandably, clearly and reusable.
