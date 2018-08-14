@@ -1,5 +1,17 @@
-package Command_Calculator;
+/**
+ * In this package you will learn how to manage a undo-function related to
+ * a specific input with history management and the class "Stack".
+ * Imagine you are a user with a calculator.
+ *
+ * Enjoy the course and feel free to contribute.
+ */
+package Command_Undo_Numberinput;
 
+/**
+ * @author Kevin Ossenbrück
+ * @date August 2018
+ * @github https://github.com/OtenMoten
+ */
 class Plus implements IOperation {
 
     private final MyInteger myInteger_1;
@@ -12,7 +24,7 @@ class Plus implements IOperation {
 
     //  "Main-function" of the class.
     @Override
-    public void doIt() {
+    public void combine() {
         this.myInteger_1.plus(this.myInteger_2.getValue());
     }
 
@@ -21,7 +33,7 @@ class Plus implements IOperation {
     public void undo() {
         this.myInteger_1.minus(this.myInteger_2.getValue());
     }
-    
+
 }
 
 class Minus implements IOperation {
@@ -36,7 +48,7 @@ class Minus implements IOperation {
 
     //  "Main-function" of the class.
     @Override
-    public void doIt() {
+    public void combine() {
         this.myInteger_1.minus(this.myInteger_2.getValue());
     }
 
@@ -45,5 +57,5 @@ class Minus implements IOperation {
     public void undo() {
         this.myInteger_1.plus(this.myInteger_2.getValue());
     }
-    
+
 }

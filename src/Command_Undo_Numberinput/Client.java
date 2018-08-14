@@ -1,5 +1,17 @@
-package Command_Calculator;
+/**
+ * In this package you will learn how to manage a undo-function related to
+ * a specific input with history management and the class "Stack".
+ * Imagine you are a user with a calculator.
+ *
+ * Enjoy the course and feel free to contribute.
+ */
+package Command_Undo_Numberinput;
 
+/**
+ * @author Kevin Ossenbrück
+ * @date August 2018
+ * @github https://github.com/OtenMoten
+ */
 public class Client {
 
     public static void main(String args[]) {
@@ -14,23 +26,23 @@ public class Client {
 
         myCalc.invoke(cmdPlusObject); //    myInt_1 == 13
         System.out.println(myInt_1.getValue());
-        
+
         myCalc.invoke(cmdPlusObject); //    myInt_1 == 17
         System.out.println(myInt_1.getValue());
 
         myCalc.undo(); //   myInt_1 == 13
         System.out.println(myInt_1.getValue());
-        
+
         myCalc.undo(); //   myInt_1 == 9
         System.out.println(myInt_1.getValue());
         System.out.println("Last operation-object in the stack is @ " + myCalc.operationStack.get(0));
-        
+
         myCalc.undo(); //   myInt_1 == 5
         System.out.println("The initial state of the first variable in "
                 + "the plus-operation-object is recovered. \n Proof: A = " + myInt_1.getValue());
-        
+
         myCalc.undo(); //   Exception is throwed.
-        
+
     }
-    
+
 }

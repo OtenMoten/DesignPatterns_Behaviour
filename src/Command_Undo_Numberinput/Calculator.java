@@ -1,5 +1,17 @@
-package Command_Calculator;
+/**
+ * In this package you will learn how to manage a undo-function related to
+ * a specific input with history management and the class "Stack".
+ * Imagine you are a user with a calculator.
+ *
+ * Enjoy the course and feel free to contribute.
+ */
+package Command_Undo_Numberinput;
 
+/**
+ * @author Kevin Ossenbrück
+ * @date August 2018
+ * @github https://github.com/OtenMoten
+ */
 import java.util.EmptyStackException;
 import java.util.Stack;
 
@@ -7,14 +19,14 @@ public class Calculator {
 
     Stack<IOperation> operationStack = new Stack<>();
 
-    public void invoke(IOperation newOperation) {
+    protected void invoke(IOperation newOperation) {
         //  Add a new operation-object to the stack and
         this.operationStack.push(newOperation);
         //  ever time a new operation-objected is pushed to stack
-        //  then the ".doIt()"-function is executed on the operation-object.
-        //  What the ".doIt()"-function does is related to the given Commands-object
+        //  then the ".combine()"-function is executed on the operation-object.
+        //  What the ".combine()"-function does is related to the given Commands-object
         //  if it's a plus-, minus-, ... object.
-        newOperation.doIt();
+        newOperation.combine();
     }
 
     public void undo() {
@@ -33,7 +45,6 @@ public class Calculator {
                     + "'"
                     + " means there is no more operation in the stack.");
         }
-        //  Get the latest element from the stack and
 
     }
 
