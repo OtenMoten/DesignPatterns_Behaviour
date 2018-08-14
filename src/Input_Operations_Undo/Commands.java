@@ -1,11 +1,13 @@
 /**
- * In this package you will learn how to manage a undo-function related to
- * a specific input with history management and the class "Stack".
+ * In this package you will learn how to manage a undo-function with
+ * with history-management related to a specific input.
+ * We will use the class "Stack".
+ *
  * Imagine you are a user with a calculator.
  *
  * Enjoy the course and feel free to contribute.
  */
-package Command_Undo_Numberinput;
+package Input_Operations_Undo;
 
 /**
  * @author Kevin Ossenbrück

@@ -1,10 +1,11 @@
 /**
- * In this package you will learn how to manage a simple trigger function with
- * history management and the class "Stack".
+ * In this package you will learn how to manage a bunch of commands with a
+ * undo-function and history management.
+ * We will use the class "Stack".
  *
  * Enjoy the course and feel free to contribute.
  */
-package Command_Trigger_History_Stack;
+package Commando_Stack_With_History_Undo;
 
 /**
  * @author Kevin Ossenbrück
@@ -29,21 +30,22 @@ public class Client {
         System.out.println("All commands:");
         myCaller.historyStack.forEach((cmd) -> {
             cmd.execute();
-        }); System.out.println("--------------------");
+        });
+        System.out.println("--------------------");
 
         System.out.println();
         System.out.println("The last command:");
-        myCaller.ctrlZ();
+        myCaller.undo();
 
         System.out.println("The middle command:");
-        myCaller.ctrlZ();
+        myCaller.undo();
 
         System.out.println("The first command:");
-        myCaller.ctrlZ();
+        myCaller.undo();
 
         //  Will throw a error message.
         System.out.println("Really, this is the first command! ------------");
-        myCaller.ctrlZ();
+        myCaller.undo();
 
     }
 

@@ -1,10 +1,11 @@
 /**
- * In this package you will learn how to manage a simple trigger function with
- * history management and the class "Stack".
+ * In this package you will learn how to manage a bunch of commands with a
+ * undo-function and history management.
+ * We will use the class "Stack".
  *
  * Enjoy the course and feel free to contribute.
  */
-package Command_Trigger_History_Stack;
+package Commando_Stack_With_History_Undo;
 
 /**
  * @author Kevin Ossenbrück
@@ -24,7 +25,7 @@ public class Caller {
         commando.execute();
     }
 
-    public void ctrlZ() {
+    public void undo() {
 
         try {
             //  Get the last command from the stack and

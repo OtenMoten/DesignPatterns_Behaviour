@@ -1,10 +1,12 @@
 /**
  * In this package you will learn how to manage a undo-function related to
  * a user's input on a keyboard.
+ * We will use a specific "UndoManager"-library.
+ * (import javax.swing.undo.*)
  *
  * Enjoy the course and feel free to contribute.
  */
-package Command_Undo_Textinput;
+package Input_Text_Undo;
 
 /**
  * @author Kevin Ossenbrück
@@ -49,7 +51,7 @@ public class UndoExample {
         textarea.getDocument().addUndoableEditListener(undomanager);
         //  Set up the maximal count of the history.
         undomanager.setLimit(120);
-        
+
         //  Install a action-listener on the button.
         btnUndo.addActionListener((ActionEvent actionEvent) -> {
             //  Check if history is not empty.

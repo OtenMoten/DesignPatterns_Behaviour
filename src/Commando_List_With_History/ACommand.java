@@ -1,10 +1,11 @@
 /**
- * In this package you will learn how to manage a simple trigger function with
- * history management and the class "ArrayList".
+ * In this package you will learn how to manage a
+ * bunch of commands with history management.
+ * We will use the class "ArrayList".
  *
  * Enjoy the course and feel free to contribute.
  */
-package Command_Trigger_History_ArrayList;
+package Commando_List_With_History;
 
 /**
  * @author Kevin Ossenbrück

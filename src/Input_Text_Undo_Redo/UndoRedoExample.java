@@ -1,10 +1,12 @@
 /**
  * In this package you will learn how to manage a undo- and redo-function related
  * to a user's input on a keyboard.
+ * We will use a specific "UndoManager"-library.
+ * (import javax.swing.undo.*)
  *
  * Enjoy the course and feel free to contribute.
  */
-package Command_Undo_Redo_Textinput;
+package Input_Text_Undo_Redo;
 
 /**
  * @author Kevin Ossenbrück
