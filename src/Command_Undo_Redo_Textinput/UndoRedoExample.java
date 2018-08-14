@@ -4,7 +4,7 @@
  *
  * Enjoy the course and feel free to contribute.
  */
-package Command_Undo_Redo;
+package Command_Undo_Redo_Textinput;
 
 /**
  * @author Kevin Ossenbrück

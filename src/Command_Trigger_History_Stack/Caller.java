@@ -1,6 +1,6 @@
 /**
  * In this package you will learn how to manage a simple trigger function with
- * history management.
+ * history management and the class "Stack".
  *
  * Enjoy the course and feel free to contribute.
  */
