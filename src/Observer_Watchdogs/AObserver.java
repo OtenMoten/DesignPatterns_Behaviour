@@ -18,6 +18,8 @@ abstract class AObserver implements IObserver {
 
     private final ISubject mySubject;
 
+    //  The subject from the input-parameter by the initialization of
+    //  a oberserver-object is directly connected to the observer.
     public AObserver(ISubject newSubject) {
         this.mySubject = newSubject;
         this.mySubject.addObserver(this);

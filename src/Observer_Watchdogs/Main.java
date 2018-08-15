@@ -35,6 +35,7 @@ public class Main {
         ((Subject) mySubject).setState(11);
         System.out.println();
 
+        //  Remove the myBetaObserver-object.
         //  Remove the myGammaObserver-object.
         System.out.println("Beta-observer will be removed.");
         System.out.println("Gamma-observer will be removed.");
