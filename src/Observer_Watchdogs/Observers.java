@@ -4,7 +4,7 @@
  *
  * Enjoy the course and feel free to contribute.
  */
-package Observer_Example;
+package Observer_Watchdogs;
 
 /**
  * @author Kevin Ossenbrück
