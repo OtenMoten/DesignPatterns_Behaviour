@@ -1,5 +1,7 @@
 /**
  * In this package you will learn how to deal with different states of a object.
+ * It should seem to be that the object is changing it's class-type
+ * while running. This is the keypoint of the "State"-pattern.
  *
  * Enjoy the course and feel free to contribute.
  */

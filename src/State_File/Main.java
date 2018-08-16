@@ -1,6 +1,7 @@
 /**
  * In this package you will learn how to manage different states of a object
- * while a running program.
+ * while a running program. It should seem to be that the object is changing
+ * it's class-type while running. This is the keypoint of the "State"-pattern.
  *
  * Enjoy the course and feel free to contribute.
  */
